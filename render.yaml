@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-web-summarizer
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
